@@ -29,7 +29,8 @@ function renderTasks() {
     return;
   }
 
-  for (const task of tasks) {
+  for (let i = 0; i < tasks.length; i++) {
+    const task = tasks[i];
     const item = document.createElement("li");
     if (task.done) {
       item.className = "done";
